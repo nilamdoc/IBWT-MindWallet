@@ -1,0 +1,17 @@
+{
+  "version" : "0.1",
+  "name": "IBWT-MindWallet",
+  "type": "privileged",
+  "description": "An HTML5 Bitcoin Wallet",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/img/icon-60.png",
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "IBWT-MindWallet",
+    "url": "https://ibwt.co.uk"
+  },
+  "default_locale": "en",
+  "fullscreen": "true"
+}
