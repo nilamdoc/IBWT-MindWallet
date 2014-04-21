@@ -236,9 +236,9 @@ buttons = new function(){
 				var url_salt = false;
 				var saved_salt = base.get('salt');
 				var saved_url = base.get('url');
-				if(!window.location) url_salt = 'https://braincontrol.me';
+				if(!window.location) url_salt = 'https://ibwt.co.uk';
 				else if(!saved_url && window.location.href) url_salt = window.location.href.substring(0, window.location.href.length - window.location.search.length);
-				else if(!saved_url && !window.location.href) url_salt = 'https://braincontrol.me';
+				else if(!saved_url && !window.location.href) url_salt = 'https://ibwt.co.uk';
 				else if(saved_url) url_salt = saved_url;
 				if(data.type == 'import_keys' && !data.salt && saved_salt) data.salt = saved_salt;
 				else if(data.type == 'import_keys' && !saved_salt)
