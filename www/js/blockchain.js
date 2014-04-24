@@ -21,6 +21,7 @@ blockchain = new function(){
 			url = 'https://blockchain.info/q/'+func;
 		}
 		if(!confirmations) confirmations = 0;
+		
 		if(confirmations) url+= '?confirmations='+confirmations;
 		$.ajax({
 			url: url,
@@ -35,7 +36,7 @@ blockchain = new function(){
 				{
 					error_contacting_blockchain_info = true;
 					blockchain_info_timeout = setInterval(function(){blockchain_info_timeout_callback()},30000); // Every 30 Seconds
-					alert(base.lang('Error contacting BlockChain.info - Account Balances and Market Conditions are Currently Unavailable.'));
+					alert(base.lang('Error contacting blockchain.info - Account Balances and Market Conditions are Currently Unavailable.'));
 				}
 			}
 		})
