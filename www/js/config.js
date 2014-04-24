@@ -3,15 +3,15 @@ if(BC_BASE_URL.substring(BC_BASE_URL.length-10) == "index.html")
 {
 	BC_BASE_URL = BC_BASE_URL.substring(0, BC_BASE_URL.length-10);
 }
-alert(BC_BASE_URL);
+
 config = new function(){
 
 	this.defaults = function()
 	{
 		var defaults = {
 			id: 'braincontrol',
-			name: 'IBWT-MindWallet',
-			salt: 'IBWT-MindWallet',
+			name: 'BrainControl',
+			salt: 'braincontrolmesalt',
 			stats: [
 				{id: 'dashboard-usd', fact: base.lang('BTC to USD'), figure: base.lang('loading')},
 				{id: 'dashboard-24tx', fact: base.lang('Daily Transactions'), figure: base.lang('loading')},
@@ -88,7 +88,7 @@ config = new function(){
 						id: 'step-profile',
 						icon: 'bc-profile'
 					},
-					title: base.lang('IBWT<span>MindWallet</span>')
+					title: base.lang('Brain<span>Control</span>')
 				},
 				nav: [
 					{ href: '#', classes: 'bc-slide active', id: 'page-markets', icon: 'bc-markets', text: 'Markets' },

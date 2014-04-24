@@ -1,6 +1,6 @@
 {
   "version" : "0.1",
-  "name": "IBWT-MindWallet",
+  "name": "BrainControl",
   "type": "privileged",
   "description": "An HTML5 Bitcoin Wallet",
   "launch_path": "/index.html",
@@ -9,8 +9,8 @@
     "128": "/img/icon-128.png"
   },
   "developer": {
-    "name": "IBWT-MindWallet",
-    "url": "https://ibwt.co.uk"
+    "name": "BrainControl",
+    "url": "http://braincontrol.me"
   },
   "default_locale": "en",
   "fullscreen": "true"
