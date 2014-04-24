@@ -37,8 +37,8 @@ var base = new function(){
 	this.really_compatible = function(options)
 	{
 		try{
-			localStorage.setItem('bc.temp', JSON.stringify({test:'testing'}));
-			return localStorage['bc.temp'];
+			localStorage.setItem('ibwt.temp', JSON.stringify({test:'testing'}));
+			return localStorage['ibwt.temp'];
 		}catch(e){
 			return false;
 		}
@@ -64,19 +64,19 @@ var base = new function(){
 	// SET STORE
 	this.set = function(key, value)
 	{
-		localStorage.setItem('bc.'+key, JSON.stringify(value));
+		localStorage.setItem('ibwt.'+key, JSON.stringify(value));
 	}
 
 	// GET FROM STORE
 	this.get = function(key)
 	{
-		if(this.is_json(localStorage['bc.'+key]))
+		if(this.is_json(localStorage['ibwt.'+key]))
 		{
-			return $.parseJSON(localStorage['bc.'+key])
+			return $.parseJSON(localStorage['ibwt.'+key])
 		}
-		else if(localStorage['bc.'+key])
+		else if(localStorage['ibwt.'+key])
 		{
-			return localStorage['bc.'+key];
+			return localStorage['ibwt.'+key];
 		}
 		return false;
 	}
