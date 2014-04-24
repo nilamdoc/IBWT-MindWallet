@@ -3,7 +3,7 @@ if(BC_BASE_URL.substring(BC_BASE_URL.length-10) == "index.html")
 {
 	BC_BASE_URL = BC_BASE_URL.substring(0, BC_BASE_URL.length-10);
 }
-
+alert(BC_BASE_URL);
 config = new function(){
 
 	this.defaults = function()
